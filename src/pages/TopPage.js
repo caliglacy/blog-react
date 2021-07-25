@@ -6,13 +6,9 @@ const TopPage = () => {
   const [posts, setPosts] = useState([]); // 記事一覧用のstate
 
   const getPosts = () => {
-    console.log("posts", posts);
-
     return (
       <div>
         {posts.map((post, index) => {
-          console.log("post", post);
-
           return (
             <div key={index}>
               <h3>{post.title}</h3>
