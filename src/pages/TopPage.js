@@ -15,7 +15,7 @@ const TopPage = () => {
 
           return (
             <div key={index}>
-              <div>{post.title}</div>
+              <h3>{post.title}</h3>
               <div>
                 <span>{post.publishedAt.slice(0, 10)}</span>
                 <span>{post.category.category}</span>
@@ -45,7 +45,7 @@ const TopPage = () => {
 
   return (
     <div>
-      <h2>投稿一覧の表示テスト</h2>
+      <h2>コンポーネント：トップ</h2>
       {getPosts()}
     </div>
   );
