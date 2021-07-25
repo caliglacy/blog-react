@@ -1,0 +1,3 @@
+const PostPages = () => {};
+
+export { PostPages };
