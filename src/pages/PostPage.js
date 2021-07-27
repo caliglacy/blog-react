@@ -1,3 +1,5 @@
-const PostPages = () => {};
+const PostPage = () => {
+  return <div>これはPostPageです</div>;
+};
 
-export { PostPages };
+export { PostPage };
