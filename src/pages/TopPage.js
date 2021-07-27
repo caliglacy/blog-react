@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import noImg from "../img/no-image.png";
+import { PostAbout } from "../components/PostAbout";
 
 const TopPage = () => {
   const API_KEY_MICROCMS = "89355ccb-6236-420b-aeac-f740c233f765";
@@ -11,15 +11,7 @@ const TopPage = () => {
         {posts.map((post, index) => {
           return (
             <div key={index}>
-              <h3>{post.title}</h3>
-              <div>
-                <span>{post.publishedAt.slice(0, 10)}</span>
-                <span>{post.category.category}</span>
-              </div>
-              <div>
-                <span>{post.thumbnail ? <img src={post.thumbnail.url}></img> : <img src={noImg}></img>}</span>
-              </div>
-              <div>{post.description}</div>
+              <PostAbout props={post} />
             </div>
           );
         })}
