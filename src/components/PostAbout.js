@@ -1,6 +1,6 @@
 import noImg from "../img/no-image.png";
 
-const PostAbout = ({ props } = props) => {
+const PostAbout = ({ props }) => {
   return (
     <div>
       <h3>{props.title}</h3>
