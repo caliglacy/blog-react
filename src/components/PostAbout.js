@@ -9,7 +9,13 @@ const PostAbout = ({ props }) => {
         <span>{props.category.category}</span>
       </div>
       <div>
-        <span>{props.thumbnail ? <img src={props.thumbnail.url}></img> : <img src={noImg}></img>}</span>
+        <span>
+          {props.thumbnail ? (
+            <img src={props.thumbnail.url} alt={`thumbnail-${props.id}`}></img>
+          ) : (
+            <img src={noImg} alt="no-thumbnail"></img>
+          )}
+        </span>
       </div>
       <div>{props.description}</div>
     </div>
