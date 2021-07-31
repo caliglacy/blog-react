@@ -35,7 +35,7 @@ const PostPage = (props) => {
           title: data.title,
           publishedAt: data.publishedAt,
           category: data.category,
-          thumbnailURL: data.hasOwnProperty("thumbnail") ?? data.thumbnail.url, // サムネイルは任意項目なので存在有無のチェックが必要
+          thumbnailURL: data.hasOwnProperty("thumbnail") ? data.thumbnail.url : "", // サムネイルは任意項目なので存在有無のチェックが必要
           description: data.description,
           body: data.body,
         });
