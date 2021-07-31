@@ -10,6 +10,7 @@ const PostPage = (props) => {
 
   // 記事データのstate
   const [post, setPost] = useState({
+    id: "", //記事ID
     title: "", //記事タイトル
     publishedAt: "", // 公開日
     category: "", //カテゴリ
@@ -32,6 +33,7 @@ const PostPage = (props) => {
       .then((res) => res.json())
       .then((data) => {
         setPost({
+          id: data.id,
           title: data.title,
           publishedAt: data.publishedAt,
           category: data.category,
