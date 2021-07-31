@@ -1,8 +1,6 @@
 import noImg from "../img/no-image.png";
 
 const PostAll = ({ props }) => {
-  console.log("渡されたprops:", props);
-
   return (
     <div>
       <h3>{props.title}</h3>
