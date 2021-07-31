@@ -1,6 +1,7 @@
 import noImg from "../img/no-image.png";
 
 const PostAll = ({ props }) => {
+  // 記事の読み込みが完了していない場合のブロック処理を上流で行うこと
   return (
     <div>
       <h3>{props.title}</h3>
