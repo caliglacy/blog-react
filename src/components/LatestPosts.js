@@ -38,7 +38,7 @@ const LatestPosts = ({ count }) => {
       });
   }, [count]);
 
-  const showPosts = (posts, cnt) => {
+  const showPosts = (posts) => {
     return posts.length ? (
       <div>
         {posts.map((post, index) => {
