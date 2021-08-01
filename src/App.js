@@ -5,6 +5,7 @@ import { PostPage } from "./pages/PostPage";
 import { Page404 } from "./pages/Page404";
 import { PostSearch } from "./pages/PostSearch";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route component={Page404} />
         </Switch>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }
