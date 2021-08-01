@@ -1,8 +1,8 @@
 import noImg from "../img/no-image.png";
 
-const PostAbout = ({ props }) => {
+const PostAbout = ({ props }, index) => {
   return (
-    <div>
+    <div key={"post-about-" + String(index)}>
       <h3>{props.title}</h3>
       <div>
         <span>{props.publishedAt.slice(0, 10)}</span>

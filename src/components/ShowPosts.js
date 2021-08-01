@@ -6,11 +6,7 @@ const ShowPosts = ({ posts }) => {
   return posts.length ? (
     <div>
       {posts.map((post, index) => {
-        return (
-          <div key={index}>
-            <PostAbout props={post} />
-          </div>
-        );
+        return <PostAbout props={post} key={index} />;
       })}
     </div>
   ) : (
