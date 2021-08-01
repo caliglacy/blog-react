@@ -1,5 +1,4 @@
 const ShowCategories = ({ categories }) => {
-  console.log(categories);
   //カテゴリを表示
   return categories.length ? (
     <div>
