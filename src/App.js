@@ -6,6 +6,7 @@ import { Page404 } from "./pages/Page404";
 import { PostSearch } from "./pages/PostSearch";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { SideBar } from "./components/SideBar";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route component={Page404} />
         </Switch>
       </BrowserRouter>
+      <SideBar />
       <Footer />
     </div>
   );
