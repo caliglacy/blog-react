@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Loading } from "../components/Loading";
-import { PostAbout } from "../components/PostAbout";
-import { PostNotMuch } from "../components/PostNotMuch";
+import { ShowPosts } from "../components/ShowPosts";
 
 const PostSearch = () => {
   const [keyword, setKeyword] = useState("");
@@ -37,29 +36,12 @@ const PostSearch = () => {
       });
   };
 
-  const showPosts = (posts) => {
-    return posts.length ? (
-      <div>
-        {posts.map((post, index) => {
-          return (
-            <div key={index}>
-              <PostAbout props={post} />
-            </div>
-          );
-        })}
-      </div>
-    ) : (
-      // 表示する投稿が0件だった場合
-      <PostNotMuch />
-    );
-  };
-
   return (
     <div>
       <div>キーワードで検索</div>
       <input type="text" onChange={(e) => setKeyword(e.target.value)}></input>
       <button onClick={() => searchKeyword(keyword)}>検索</button>
-      {loading ? <Loading /> : showPosts(posts)}
+      {loading ? <Loading /> : <ShowPosts posts={posts} />}
     </div>
   );
 };

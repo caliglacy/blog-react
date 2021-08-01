@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { PostAbout } from "../components/PostAbout";
 import { Loading } from "./Loading";
-import { PostNotMuch } from "./PostNotMuch";
+import { ShowPosts } from "./ShowPosts";
 
 const LatestPosts = ({ count }) => {
   // このコンポーネントは最新の投稿を表示します
@@ -38,24 +37,7 @@ const LatestPosts = ({ count }) => {
       });
   }, [count]);
 
-  const showPosts = (posts) => {
-    return posts.length ? (
-      <div>
-        {posts.map((post, index) => {
-          return (
-            <div key={index}>
-              <PostAbout props={post} />
-            </div>
-          );
-        })}
-      </div>
-    ) : (
-      // 表示する投稿が0件だった場合
-      <PostNotMuch />
-    );
-  };
-
-  return loading ? <Loading /> : showPosts(posts, 5);
+  return loading ? <Loading /> : <ShowPosts posts={posts} />;
 };
 
 export { LatestPosts };
