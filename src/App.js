@@ -10,20 +10,18 @@ import { SideBar } from "./components/SideBar";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={TopPage} />
-          {/* <Route exact path="/post" component={PostListPage} /> */}
-          <Route exact path="/post" component={PostSearch /* ToDo: 仮配置。設計通りであるかはチェックすること。 */} />
-          <Route path="/post/:id" component={PostPage} />
-          <Route component={Page404} />
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={TopPage} />
+        {/* <Route exact path="/post" component={PostListPage} /> */}
+        <Route exact path="/post" component={PostSearch /* ToDo: 仮配置。設計通りであるかはチェックすること。 */} />
+        <Route path="/post/:id" component={PostPage} />
+        <Route component={Page404} />
+      </Switch>
       <SideBar />
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
