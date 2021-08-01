@@ -1,7 +1,7 @@
 import { PostAbout } from "./PostAbout";
 import { PostNotMuch } from "./PostNotMuch";
 
-const ShowPosts = ({ posts }) => {
+const ShowPosts = ({ posts, searched }) => {
   // 記事概要を表示
   return posts.length ? (
     <div>
@@ -10,8 +10,8 @@ const ShowPosts = ({ posts }) => {
       })}
     </div>
   ) : (
-    // 表示する投稿が0件だった場合
-    <PostNotMuch />
+    // 表示する投稿が0件だった場合はそう伝える
+    <div>{searched ? <PostNotMuch /> : <div>キーワードごとに最新10件の投稿を検索できます。</div>}</div>
   );
 };
 

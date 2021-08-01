@@ -5,6 +5,7 @@ import { Loading } from "../components/Loading";
 import { ShowPosts } from "../components/ShowPosts";
 
 const PostSearch = () => {
+  const [searched, setSearched] = useState(false); // 1回以上検索したか
   const [keyword, setKeyword] = useState("");
   // const [categories, setCategories] = useState("");
   const [posts, setPosts] = useState([]); // 記事一覧用のstate
@@ -50,11 +51,13 @@ const PostSearch = () => {
         setPosts(json.contents);
         // 記事データ取得成功
         setLoading(false);
+        setSearched(true);
       })
       .catch((err) => {
         console.log("最新投稿の取得に失敗しました。 TopPage.js", err);
         // 記事データ取得失敗
         setLoading(false);
+        setSearched(true);
       });
   };
 
@@ -65,7 +68,8 @@ const PostSearch = () => {
         <input type="text" onChange={(e) => setKeyword(e.target.value)}></input>
         <button onClick={() => searchKeyword(keyword)}>検索</button>
       </div>
-      {loading ? <Loading /> : <ShowPosts posts={posts} />}
+
+      {loading ? <Loading /> : <ShowPosts posts={posts} searched={searched} />}
     </div>
   );
 };
