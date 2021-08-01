@@ -4,7 +4,7 @@ const TopPage = () => {
   return (
     <div>
       <h2>コンポーネント：トップ</h2>
-      <LatestPosts />
+      <LatestPosts count={5} />
     </div>
   );
 };

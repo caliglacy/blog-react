@@ -3,7 +3,7 @@ import { PostAbout } from "../components/PostAbout";
 import { Loading } from "./Loading";
 import { PostNotMuch } from "./PostNotMuch";
 
-const LatestPosts = () => {
+const LatestPosts = ({ count }) => {
   // このコンポーネントは最新の投稿を表示します
 
   const API_KEY_MICROCMS = "89355ccb-6236-420b-aeac-f740c233f765";
@@ -14,8 +14,13 @@ const LatestPosts = () => {
     // 記事データ取得開始
     setLoading(true);
 
-    // 投稿を取得する(全取得、新しい順)
-    fetch("https://caliglacy.microcms.io/api/v1/post/", {
+    // リクエスト情報作成
+    let url = new URL("https://caliglacy.microcms.io/api/v1/post/");
+    const params = { limit: count };
+    url.search = new URLSearchParams(params);
+
+    // 投稿データを取得
+    fetch(url, {
       headers: {
         "X-API-KEY": API_KEY_MICROCMS,
       },
@@ -31,7 +36,7 @@ const LatestPosts = () => {
         // 記事データ取得失敗
         setLoading(false);
       });
-  }, []);
+  }, [count]);
 
   const showPosts = (posts, cnt) => {
     return posts.length ? (
