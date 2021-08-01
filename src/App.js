@@ -4,10 +4,14 @@ import { TopPage } from "./pages/TopPage";
 import { PostPage } from "./pages/PostPage";
 import { Page404 } from "./pages/Page404";
 import { PostSearch } from "./pages/PostSearch";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { SideBar } from "./components/SideBar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Switch>
         <Route exact path="/" component={TopPage} />
         {/* <Route exact path="/post" component={PostListPage} /> */}
@@ -15,6 +19,8 @@ function App() {
         <Route path="/post/:id" component={PostPage} />
         <Route component={Page404} />
       </Switch>
+      <SideBar />
+      <Footer />
     </BrowserRouter>
   );
 }
