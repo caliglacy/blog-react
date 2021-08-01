@@ -32,7 +32,7 @@ const LatestPosts = () => {
       });
   }, []);
 
-  const getPosts = () => {
+  const showPosts = () => {
     return (
       <div>
         {posts.map((post, index) => {
@@ -46,7 +46,7 @@ const LatestPosts = () => {
     );
   };
 
-  return <div>{loading ? <Loading /> : getPosts()}</div>;
+  return <div>{loading ? <Loading /> : showPosts()}</div>;
 };
 
 export { LatestPosts };
