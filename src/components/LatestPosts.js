@@ -26,7 +26,7 @@ const LatestPosts = () => {
         setLoading(false);
       })
       .catch((err) => {
-        console.log("投稿データの取得に失敗しました。 TopPage.js");
+        console.log("最新投稿の取得に失敗しました。 TopPage.js", err);
         // 記事データ取得失敗
         setLoading(false);
       });
