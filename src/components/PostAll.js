@@ -13,6 +13,7 @@ const PostAll = ({ props }) => {
             <span>{props.publishedAt.slice(0, 10)}</span>
             <span>{props.category.category}</span>
           </div>
+          <div>{props.description}</div>
           <div>
             <span>
               {props.thumbnailURL ? (
@@ -22,7 +23,6 @@ const PostAll = ({ props }) => {
               )}
             </span>
           </div>
-          <div>{props.description}</div>
           <div dangerouslySetInnerHTML={{ __html: props.body }} />
           {/* <div>{props.body}</div> */}
         </div>

@@ -49,7 +49,7 @@ const PostPage = (props) => {
         // 記事データ取得失敗
         setLoading(false);
       });
-  }, []);
+  }, [id]);
 
   return <div>{loading ? <Loading /> : <PostAll props={post} />}</div>;
 };
