@@ -1,5 +1,15 @@
 const Footer = () => {
-  return <div>これはフッターです</div>;
+  const Year = new Date().getFullYear(); // 表示時の西暦
+  return (
+    <div>
+      <div>
+        <span>ホーム</span>
+        <span>先頭に戻る</span>
+        <span>お問い合わせ</span>
+      </div>
+      <div>© {Year} caliglacy All rights reserved.</div>
+    </div>
+  );
 };
 
 export { Footer };
