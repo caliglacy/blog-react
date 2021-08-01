@@ -63,12 +63,12 @@ const PostSearch = () => {
         <div>キーワードで検索</div>
         <input type="text" onChange={(e) => setKeyword(e.target.value)}></input>
         <button onClick={() => searchKeyword(keyword)}>検索</button>
-        {loading ? <Loading /> : <ShowPosts posts={posts} />}
       </div>
       <div>
         <div>カテゴリで検索</div>
         <ShowCategories categories={categories} />
       </div>
+      {loading ? <Loading /> : <ShowPosts posts={posts} />}
     </div>
   );
 };
