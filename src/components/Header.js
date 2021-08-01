@@ -1,18 +1,18 @@
-import { BrowserRouter, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div>
       <div>ロゴ</div>
       <ul>
         <li>
-          <Link activeClassName="active" exact to="/">
+          <NavLink activeClassName="active" exact to="/">
             ホーム
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link activeClassName="active" exact to="/post">
+          <NavLink activeClassName="active" exact to="/post">
             投稿検索
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>
