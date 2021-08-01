@@ -14,6 +14,11 @@ const Header = () => {
             投稿検索
           </NavLink>
         </li>
+        <li>
+          <NavLink activeClassName="active" exact to="/profile">
+            プロフィール
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
