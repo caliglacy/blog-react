@@ -16,7 +16,7 @@ const LatestPosts = ({ count }) => {
 
     // リクエスト情報作成
     let url = new URL("https://caliglacy.microcms.io/api/v1/post/");
-    const params = { limit: count };
+    const params = { limit: count, orders: "-publishedAt" };
     url.search = new URLSearchParams(params);
 
     // 投稿データを取得
