@@ -1,0 +1,36 @@
+{
+    "name": "caliglacy",
+    "description": "組み込み系のフリーランスエンジニアです。2015年から名古屋でFA装置のF/W設計・開発に携わっています。現在は合間を縫ってフロントエンドを学習中。",
+    "portfolio": "本サイト",
+    "skill": [{
+            "skill": "C言語",
+            "year": 7,
+            "work": true
+        },
+        {
+            "skill": "HTML/CSS",
+            "year": 2,
+            "work": false
+        }
+    ],
+    "career": [{
+            "year": 2015,
+            "month": 3,
+            "event": "大学(工学部)を卒業"
+        },
+        {
+            "year": 2015,
+            "month": 4,
+            "event": "大手派遣会社に入社"
+        },
+        {
+            "year": 2020,
+            "month": 12,
+            "event": "フリーランスに転向"
+        }
+    ],
+    "sns": [{
+        "github": "https://github.com/caliglacy",
+        "twitter": "https://twitter.com/Caliglacy"
+    }]
+}
