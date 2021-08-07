@@ -1,7 +1,12 @@
 {
     "name": "caliglacy",
     "description": "組み込み系のフリーランスエンジニアです。2015年から名古屋でFA装置のF/W設計・開発に携わっています。現在は合間を縫ってフロントエンドを学習中。",
-    "portfolio": "本サイト",
+    "portfolio": [{
+        "name": "かりらぼ",
+        "link": "/",
+        "thumbnail": null,
+        "comment": "本サイトです。ReactとmicroCMSで作られたSPAのブログです。"
+    }],
     "skill": {
         "language": [{
                 "skill": "C言語",
@@ -71,8 +76,8 @@
             "category": "Embedded"
         }
     ],
-    "sns": [{
+    "sns": {
         "github": "https://github.com/caliglacy",
         "twitter": "https://twitter.com/Caliglacy"
-    }]
+    }
 }
