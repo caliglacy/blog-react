@@ -1,0 +1,83 @@
+{
+    "name": "caliglacy",
+    "description": "組み込み系のフリーランスエンジニアです。2015年から名古屋でFA装置のF/W設計・開発に携わっています。現在は合間を縫ってフロントエンドを学習中。",
+    "portfolio": [{
+        "name": "かりらぼ",
+        "link": "/",
+        "thumbnail": null,
+        "comment": "本サイトです。ReactとmicroCMSで作られたSPAのブログです。"
+    }],
+    "skill": {
+        "language": [{
+                "skill": "C言語",
+                "year": 7,
+                "work": true,
+                "comment": "組み込み開発の即戦力となれるレベルです。"
+            },
+            {
+                "skill": "HTML/CSS",
+                "year": 2,
+                "work": false,
+                "comment": "レイアウトやアニメーションといったデザイン面は得意ではありません。"
+            },
+            {
+                "skill": "JavaScript",
+                "year": 0.5,
+                "work": false,
+                "comment": "HTMLよりもJavaScriptを書いている時間のほうが長いです。"
+            }
+        ],
+        "library": [{
+                "skill": "React",
+                "year": 0.5,
+                "work": false,
+                "comment": "Vue.jsも良かったですが、やっぱりReactのほうがしっくりきますね。C言語やJavaScriptから入ってるからかな。"
+            },
+            {
+                "skill": "jQuery",
+                "year": 0.2,
+                "work": false,
+                "comment": "ReactやVue.jsに出会ってからは見かけなくなりました。"
+            }
+        ],
+        "framework": [{
+            "skill": "Vue.js",
+            "year": 0.2,
+            "work": false,
+            "comment": "初めてSPAを作るときに使いました。もともとSPAの作品が作りたかったので感動ものでした。"
+        }]
+    },
+    "career": [{
+            "year": 2015,
+            "month": 4,
+            "event": "FA向け汎用インバータのF/W開発に参画",
+            "comment": "主にロータリエンコーダ入力や産業用Ethernet通信や開発を多く担当。多くのノウハウを伝授していただき、とてもお世話になりました。",
+            "category": "Embedded"
+        },
+        {
+            "year": 2019,
+            "month": 10,
+            "event": "FA向け産業用Ethernet対応信号変換器のF/W開発に参画",
+            "comment": "これまで経験した産業用Ethernet通信技術を深めるだけでなく、上位機器であるシーケンサ(PLC)周りの知識の習得もできました。",
+            "category": "Embedded"
+        },
+        {
+            "year": 2021,
+            "month": 1,
+            "event": "ArduinoタッチデバイスF/W開発に参画",
+            "comment": "これまでに獲得したアナログ要素に対する制御のおかげもあり、発注元に大変満足いただけるF/Wが開発できました。",
+            "category": "Embedded"
+        },
+        {
+            "year": 2021,
+            "month": 4,
+            "event": "FA向けレーザマーカF/W開発に参画",
+            "comment": "とてもスピード感のある開発現場で、臨機応変な対応や主体性が養われました。",
+            "category": "Embedded"
+        }
+    ],
+    "sns": {
+        "github": "https://github.com/caliglacy",
+        "twitter": "https://twitter.com/Caliglacy"
+    }
+}
