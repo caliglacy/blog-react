@@ -15,7 +15,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" exact to="/profile">
+          <NavLink activeClassName="active" to="/profile">
             プロフィール
           </NavLink>
         </li>
