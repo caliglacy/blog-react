@@ -19,6 +19,11 @@ const Header = () => {
             プロフィール
           </NavLink>
         </li>
+        <li>
+          <NavLink activeClassName="active" to="/contact">
+            問い合わせ
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
