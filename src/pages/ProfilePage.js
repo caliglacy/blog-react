@@ -24,59 +24,79 @@ const ProfilePage = () => {
       <div>
         <h2>作品</h2>
         <div>
-          <a href={profile.portfolio[0].link} target="_blank" rel="noopener noreferrer">
-            <span>
-              {profile.portfolio[0].thumbnail ? (
-                <img src={profile.portfolio[0].thumbnail} alt={profile.portfolio[0].name}></img>
-              ) : (
-                <img src={noImg} alt="no-thumbnail"></img>
-              )}
-            </span>
-            <span>
-              <div>{profile.portfolio[0].name}</div>
-              <div>{profile.portfolio[0].comment}</div>
-            </span>
-          </a>
+          {profile.portfolio.map((data, key) => {
+            return (
+              <a href={data.link} target="_blank" rel="noopener noreferrer" key={key}>
+                <span>
+                  {data.thumbnail ? (
+                    <img src={data.thumbnail} alt={data.name}></img>
+                  ) : (
+                    <img src={noImg} alt="no-thumbnail"></img>
+                  )}
+                </span>
+                <span>
+                  <div>{data.name}</div>
+                  <div>{data.comment}</div>
+                </span>
+              </a>
+            );
+          })}
         </div>
       </div>
       <div>
         <h2>スキルセット</h2>
         <div>
           <h3>言語</h3>
-          <div>
-            <div>
-              {profile.skill.language[0].skill}（{profile.skill.language[0].year}年）
-            </div>
-          </div>
+          <ul>
+            {profile.skill.language.map((data, key) => {
+              return (
+                <li key={key}>
+                  {data.skill}（{data.year}年）
+                </li>
+              );
+            })}
+          </ul>
         </div>
         <div>
           <h3>ライブラリ</h3>
-          <div>
-            <div>
-              {profile.skill.library[0].skill}（{profile.skill.library[0].year}年）
-            </div>
-          </div>
+          <ul>
+            {profile.skill.language.map((data, key) => {
+              return (
+                <li key={key}>
+                  {data.skill}（{data.year}年）
+                </li>
+              );
+            })}
+          </ul>
         </div>
         <div>
           <h3>フレームワーク</h3>
-          <div>
-            <div>
-              {profile.skill.framework[0].skill}（{profile.skill.framework[0].year}年）
-            </div>
-          </div>
+          <ul>
+            {profile.skill.language.map((data, key) => {
+              return (
+                <li key={key}>
+                  {data.skill}（{data.year}年）
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
       <div>
         <h2>職歴</h2>
-        <div>
-          <span>
-            {profile.career[0].year}年 {profile.career[0].month}月
-          </span>
-          <span>
-            <div>{profile.career[0].event}</div>
-            <div>{profile.career[0].comment}</div>
-          </span>
-        </div>
+        {profile.career.map((data, key) => {
+          return (
+            <div key={key}>
+              <span>
+                {data.year}年 {data.month}月
+              </span>
+              <span>
+                <div>{data.event}</div>
+                <div>{data.comment}</div>
+              </span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
