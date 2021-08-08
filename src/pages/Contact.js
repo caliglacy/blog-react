@@ -32,6 +32,10 @@ const Contact = () => {
       .then((response) => {
         if (response.ok) {
           alert("送信が完了しました。");
+          // 入力項目をクリア
+          setName("");
+          setMail("");
+          setText("");
           setResult("OK");
         } else {
           // 問い合わせデータ登録に失敗した場合(レスポンスが201でない)
@@ -59,6 +63,7 @@ const Contact = () => {
           onChange={(e) => {
             setName(e.target.value);
           }}
+          value={name}
         ></input>
       </div>
       <div>
@@ -69,6 +74,7 @@ const Contact = () => {
           onChange={(e) => {
             setMail(e.target.value);
           }}
+          value={mail}
         ></input>
       </div>
       <div>
@@ -79,6 +85,7 @@ const Contact = () => {
           onChange={(e) => {
             setText(e.target.value);
           }}
+          value={text}
         ></textarea>
       </div>
       <div>質問の内容によっては、お答えできない場合がございます。</div>
