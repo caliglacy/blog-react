@@ -10,6 +10,13 @@ const Contact = () => {
     const X_WRITE_API_KEY = "9bbf6254-e7fb-434e-a39a-e3dccab70554";
     const message = { name: name, mail: mail, text: text };
 
+    //送信データチェック
+    if (name === "" || mail === "" || text === "") {
+      setResult("BLANK");
+      alert("必須項目を入力してください。");
+      return;
+    }
+
     // 送信中はボタンを無効化
     setResult("BUSY");
 
