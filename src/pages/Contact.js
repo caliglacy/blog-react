@@ -1,16 +1,37 @@
 import { useState } from "react";
 
 const Contact = () => {
-  // const X_WRITE_API_KEY = "9bbf6254-e7fb-434e-a39a-e3dccab70554";
-
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [text, setText] = useState("");
 
   const sendMessage = () => {
-    console.log(name);
-    console.log(mail);
-    console.log(text);
+    const X_WRITE_API_KEY = "9bbf6254-e7fb-434e-a39a-e3dccab70554";
+    const message = { name: name, mail: mail, text: text };
+
+    // 問い合わせ内容を送信する
+    fetch("https://caliglacy.microcms.io/api/v1/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-WRITE-API-KEY": X_WRITE_API_KEY,
+      },
+      body: JSON.stringify(message),
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("送信が完了しました。");
+        } else {
+          // 問い合わせデータ登録に失敗した場合(レスポンスが201でない)
+          alert("送信に失敗しました。再度お試しください。");
+          console.log("問い合わせデータの送信に失敗しました。", response);
+        }
+      })
+      .catch((err) => {
+        // ネットワーク系のエラーによって失敗した場合
+        alert("送信に失敗しました。再度お試しください。");
+        console.log("問い合わせデータの送信に失敗しました。", err);
+      });
   };
 
   return (
