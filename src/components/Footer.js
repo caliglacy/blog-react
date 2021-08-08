@@ -5,7 +5,7 @@ const Footer = () => {
       <div>
         <span>ホーム</span>
         <span>先頭に戻る</span>
-        <span>お問い合わせ</span>
+        <span>問い合わせ</span>
       </div>
       <div>© {Year} caliglacy All rights reserved.</div>
     </div>
