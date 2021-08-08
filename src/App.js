@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { SideBar } from "./components/SideBar";
 import { ProfilePage } from "./pages/ProfilePage";
 import { Contact } from "./pages/Contact";
+import { About } from "./pages/About";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/post/:id" component={PostPage} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/contact" component={Contact} />
+        <Route path="/about" component={About} />
         <Route component={Page404} />
       </Switch>
       <SideBar />
