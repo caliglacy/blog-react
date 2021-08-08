@@ -8,6 +8,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { SideBar } from "./components/SideBar";
 import { ProfilePage } from "./pages/ProfilePage";
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/post" component={PostSearch} />
         <Route path="/post/:id" component={PostPage} />
         <Route path="/profile" component={ProfilePage} />
+        <Route path="/contact" component={Contact} />
         <Route component={Page404} />
       </Switch>
       <SideBar />

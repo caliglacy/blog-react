@@ -15,8 +15,13 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" exact to="/profile">
+          <NavLink activeClassName="active" to="/profile">
             プロフィール
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/contact">
+            問い合わせ
           </NavLink>
         </li>
       </ul>
