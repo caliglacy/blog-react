@@ -64,9 +64,7 @@ const PostSearch = () => {
   return (
     <div>
       <div>
-        <div className="block text-gray-700 font-bold mb-2" for="keyword">
-          キーワード検索
-        </div>
+        <div className="block text-gray-700 font-bold mb-2">キーワード検索</div>
         <div className="w-3/4 mb-4 flex">
           <input
             type="text"
