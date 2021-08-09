@@ -54,45 +54,69 @@ const Contact = () => {
 
   return (
     <div>
-      <div>お問い合わせ</div>
-      <div>
-        <span>お名前</span>
+      <div className="mb-2 flex">
+        <label className="w-40 block font-bold md:text-right mb-1 md:mb-0 pr-4" for="contact-name">
+          お名前
+        </label>
         <input
           type="text"
           name="name"
+          id="contact-name"
+          className="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           onChange={(e) => {
             setName(e.target.value);
           }}
           value={name}
         ></input>
       </div>
-      <div>
-        <span>メールアドレス</span>
+      <div className="mb-2 flex">
+        <label className="w-40 block font-bold md:text-right mb-1 md:mb-0 pr-4" for="contact-mail">
+          メールアドレス
+        </label>
         <input
           type="text"
           name="mail"
+          id="contact-mail"
+          className="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           onChange={(e) => {
             setMail(e.target.value);
           }}
           value={mail}
         ></input>
       </div>
-      <div>
-        <span>本文</span>
+      <div className="flex">
+        <label className="w-40 block font-bold md:text-right mb-1 md:mb-0 pr-4" for="contact-text">
+          本文
+        </label>
         <textarea
           rows="10"
           cols="60"
+          id="contact-text"
+          className="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           onChange={(e) => {
             setText(e.target.value);
           }}
           value={text}
         ></textarea>
       </div>
-      <div>質問の内容によっては、お答えできない場合がございます。</div>
-      <div>
-        <button onClick={sendMessage} disabled={result === "BUSY"}>
-          送信
-        </button>
+      <div className="mb-2 flex">
+        <div className="w-40"></div>
+        <div>質問の内容によっては、お答えできない場合がございます。</div>
+      </div>
+      <div className="flex">
+        <div className="w-40"></div>
+        <div>
+          <button
+            onClick={sendMessage}
+            className={
+              result === "BUSY"
+                ? "ml-1 w-40 bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"
+                : "ml-1 w-40 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            }
+          >
+            送信
+          </button>
+        </div>
       </div>
     </div>
   );

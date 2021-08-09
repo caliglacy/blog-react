@@ -1,11 +1,11 @@
 {
     "name": "caliglacy",
-    "description": "組み込み系のフリーランスエンジニアです。2015年から名古屋でFA装置のF/W設計・開発に携わっています。現在は合間を縫ってフロントエンドを学習中。",
+    "description": "組み込み系のフリーランスエンジニアです。<br>2015年から名古屋でFA装置のF/W設計・開発に携わっています。<br>現在は合間を縫ってフロントエンドを学習中です。",
     "portfolio": [{
-        "name": "かりらぼ",
+        "name": "かりらぼ。",
         "link": "/",
         "thumbnail": null,
-        "comment": "本サイトです。ReactとmicroCMSで作られたSPAのブログです。"
+        "text": "本サイトです。<br>ReactとmicroCMSで作られたSPAのブログです。"
     }],
     "skill": {
         "language": [{
@@ -31,7 +31,7 @@
                 "skill": "React",
                 "year": 0.5,
                 "work": false,
-                "comment": "Vue.jsも良かったですが、やっぱりReactのほうがしっくりきますね。C言語やJavaScriptから入ってるからかな。"
+                "comment": "Vue.jsも良かったですが、Reactのほうがしっくりきます。"
             },
             {
                 "skill": "jQuery",
@@ -41,11 +41,18 @@
             }
         ],
         "framework": [{
-            "skill": "Vue.js",
-            "year": 0.2,
-            "work": false,
-            "comment": "初めてSPAを作るときに使いました。もともとSPAの作品が作りたかったので感動ものでした。"
-        }]
+                "skill": "Vue.js",
+                "year": 0.2,
+                "work": false,
+                "comment": "初めてSPAを作るときに使いました。"
+            },
+            {
+                "skill": "Tailwind CSS",
+                "year": "0.1",
+                "work": false,
+                "comment": "このブログの開発でBootStrapからTailwind CSSに乗り換えました。"
+            }
+        ]
     },
     "career": [{
             "year": 2015,
