@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <div>ロゴ</div>
+      <div>かりらぼ。</div>
       <ul>
         <li>
           <NavLink activeClassName="active" exact to="/">
