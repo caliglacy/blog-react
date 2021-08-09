@@ -1,5 +1,5 @@
 const SideBar = () => {
-  return <div>これはサイドバーです</div>;
+  return <div>サイドバーは開発中です。</div>;
 };
 
 export { SideBar };
