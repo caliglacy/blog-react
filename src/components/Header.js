@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="mb-8 bg-indigo-100">
+    <div className="mb-16 bg-indigo-100">
       <div className="max-w-screen-xl mx-auto flex">
         <div className="flex-auto py-3 ml-2 text-4xl ">かりらぼ。</div>
         <ul className="h-auto flex-auto flex ">
