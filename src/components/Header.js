@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="bg-indigo-100 flex">
+    <div className="bg-indigo-100 mb-4 flex">
       <div className="flex-auto py-3 text-4xl ">かりらぼ。</div>
       <ul className="h-auto flex-auto flex ">
         <li className="flex-auto w-18 hover:bg-indigo-300 duration-200">

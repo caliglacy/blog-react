@@ -64,9 +64,27 @@ const PostSearch = () => {
   return (
     <div>
       <div>
-        <div>キーワードで検索</div>
-        <input type="text" onChange={(e) => setKeyword(e.target.value)}></input>
-        <button onClick={() => searchKeyword(keyword)}>検索</button>
+        <div className="block text-gray-700 font-bold mb-2" for="keyword">
+          キーワード検索
+        </div>
+        <div className="w-3/4 mb-4 flex">
+          <input
+            type="text"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="input keyword"
+            onChange={(e) => setKeyword(e.target.value)}
+          ></input>
+          <button
+            className={
+              loading
+                ? "ml-1 w-40 bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"
+                : "ml-1 w-40 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            }
+            onClick={() => searchKeyword(keyword)}
+          >
+            検索
+          </button>
+        </div>
       </div>
 
       {loading ? <Loading /> : <ShowPosts posts={posts} searched={searched} />}
