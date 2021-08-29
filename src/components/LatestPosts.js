@@ -1,4 +1,4 @@
-import { API_KEY_MICROCMS_POSTS } from "../environment.js";
+import { MICROCMS_API_KEY_X } from "../environment.js";
 import { useState, useEffect } from "react";
 import { Loading } from "./Loading";
 import { ShowPosts } from "./ShowPosts";
@@ -20,7 +20,7 @@ const LatestPosts = ({ count }) => {
     // 投稿データを取得
     fetch(url, {
       headers: {
-        "X-API-KEY": API_KEY_MICROCMS_POSTS,
+        "X-API-KEY": MICROCMS_API_KEY_X,
       },
     })
       .then((res) => res.json())
