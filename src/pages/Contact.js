@@ -1,3 +1,4 @@
+import { API_KEY_MICROCMS_CONTACT } from "../environment.js";
 import { useState } from "react";
 
 const Contact = () => {
@@ -7,7 +8,6 @@ const Contact = () => {
   const [text, setText] = useState("");
 
   const sendMessage = () => {
-    const X_WRITE_API_KEY = "9bbf6254-e7fb-434e-a39a-e3dccab70554";
     const message = { name: name, mail: mail, text: text };
 
     //送信データチェック
@@ -25,7 +25,7 @@ const Contact = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-WRITE-API-KEY": X_WRITE_API_KEY,
+        "X-WRITE-API-KEY": API_KEY_MICROCMS_CONTACT,
       },
       body: JSON.stringify(message),
     })

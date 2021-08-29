@@ -1,11 +1,10 @@
+import { API_KEY_MICROCMS_POSTS } from "../environment.js";
 import { useState, useEffect } from "react";
 import { Loading } from "./Loading";
 import { ShowPosts } from "./ShowPosts";
 
 const LatestPosts = ({ count }) => {
   // このコンポーネントは最新の投稿を表示します
-
-  const API_KEY_MICROCMS = "89355ccb-6236-420b-aeac-f740c233f765";
   const [posts, setPosts] = useState([]); // 記事一覧用のstate
   const [loading, setLoading] = useState(false); // 記事データ取得中
 
@@ -21,7 +20,7 @@ const LatestPosts = ({ count }) => {
     // 投稿データを取得
     fetch(url, {
       headers: {
-        "X-API-KEY": API_KEY_MICROCMS,
+        "X-API-KEY": API_KEY_MICROCMS_POSTS,
       },
     })
       .then((res) => res.json())
