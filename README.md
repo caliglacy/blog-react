@@ -4,7 +4,7 @@ Develop an original blog implemented in create-app-react.
 
 # 公開バージョン
 
-v1.1
+v1.2
 
 # 説明
 
@@ -15,10 +15,10 @@ v1.1
 
 ビルド環境にて、以下の環境変数を定義してください。
 
-| 環境変数                           | 説明                               |
-| ---------------------------------- | ---------------------------------- |
-| REACT_APP_API_KEY_MICROCMS_POSTS   | microCMS の投稿データ取得 API キー |
-| REACT_APP_API_KEY_MICROCMS_CONTACT | microCMS の問い合わせ送信 API キー |
+| 環境変数                           | 説明                                                            |
+| ---------------------------------- | --------------------------------------------------------------- |
+| REACT_APP_MICROCMS_API_KEY_X       | microCMS の API キー(GET API リクエスト用)                      |
+| REACT_APP_MICROCMS_API_KEY_X_WRITE | microCMS の API キー(POST, PUT, PATCH, DELETE API リクエスト用) |
 
 # 使用されている技術
 
@@ -39,5 +39,6 @@ v1.1
 
 # リリースノート
 
+v1.2 API キー用の環境変数名を修正<br>
 v1.1 API キーを環境変数から作成されるように修正([#4](https://github.com/caliglacy/blog-react/issues/4))<br>
 v1.0 初リリース

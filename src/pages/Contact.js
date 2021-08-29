@@ -1,4 +1,4 @@
-import { API_KEY_MICROCMS_CONTACT } from "../environment.js";
+import { MICROCMS_API_KEY_X_WRITE } from "../environment.js";
 import { useState } from "react";
 
 const Contact = () => {
@@ -25,7 +25,7 @@ const Contact = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-WRITE-API-KEY": API_KEY_MICROCMS_CONTACT,
+        "X-WRITE-API-KEY": MICROCMS_API_KEY_X_WRITE,
       },
       body: JSON.stringify(message),
     })

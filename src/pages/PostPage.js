@@ -1,4 +1,4 @@
-import { API_KEY_MICROCMS_POSTS } from "../environment.js";
+import { MICROCMS_API_KEY_X } from "../environment.js";
 import { useState, useEffect } from "react";
 import { Loading } from "../components/Loading";
 import { PostAll } from "../components/PostAll";
@@ -27,7 +27,7 @@ const PostPage = (props) => {
     // 投稿を取得する
     fetch(`https://caliglacy.microcms.io/api/v1/post/${id}`, {
       headers: {
-        "X-API-KEY": API_KEY_MICROCMS_POSTS,
+        "X-API-KEY": MICROCMS_API_KEY_X,
       },
     })
       .then((res) => res.json())

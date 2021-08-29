@@ -1,4 +1,4 @@
-import { API_KEY_MICROCMS_POSTS } from "../environment.js";
+import { MICROCMS_API_KEY_X } from "../environment.js";
 // import { useEffect, useState } from "react";
 import { useState } from "react";
 import { Loading } from "../components/Loading";
@@ -18,7 +18,7 @@ const PostSearch = () => {
   //   // カテゴリ一覧を取得
   //   fetch(url, {
   //     headers: {
-  //       "X-API-KEY": API_KEY_MICROCMS_POSTS,
+  //       "X-API-KEY": MICROCMS_API_KEY_X,
   //     },
   //   })
   //     .then((res) => res.json())
@@ -42,7 +42,7 @@ const PostSearch = () => {
     // 投稿データを取得
     fetch(url, {
       headers: {
-        "X-API-KEY": API_KEY_MICROCMS_POSTS,
+        "X-API-KEY": MICROCMS_API_KEY_X,
       },
     })
       .then((res) => res.json())

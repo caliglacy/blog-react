@@ -1,13 +1,13 @@
 // 環境変数の設定
-const API_KEY_MICROCMS_POSTS = process.env.REACT_APP_API_KEY_MICROCMS_POSTS;
-const API_KEY_MICROCMS_CONTACT = process.env.REACT_APP_API_KEY_MICROCMS_CONTACT;
+const MICROCMS_API_KEY_X = process.env.REACT_APP_MICROCMS_API_KEY_X;
+const MICROCMS_API_KEY_X_WRITE = process.env.REACT_APP_MICROCMS_API_KEY_X_WRITE;
 
 // 環境変数が未設定の場合はエラーとする
-if (!API_KEY_MICROCMS_POSTS) {
-  throw new Error("Missing env.API_KEY_MICROCMS_POSTS");
+if (!MICROCMS_API_KEY_X) {
+  throw new Error("Missing env.MICROCMS_API_KEY_X");
 }
-if (!API_KEY_MICROCMS_CONTACT) {
-  throw new Error("Missing env.API_KEY_MICROCMS_CONTACT");
+if (!MICROCMS_API_KEY_X_WRITE) {
+  throw new Error("Missing env.MICROCMS_API_KEY_X_WRITE");
 }
 
-export { API_KEY_MICROCMS_POSTS, API_KEY_MICROCMS_CONTACT };
+export { MICROCMS_API_KEY_X, MICROCMS_API_KEY_X_WRITE };
