@@ -4,7 +4,10 @@ import noImg from "../img/no-image.png";
 const PostAbout = ({ props }, index) => {
   return (
     <Link to={`/post/${props.id}`}>
-      <div key={"post-about-" + String(index)} className="flex mb-8 p-4 bg-indigo-50 shadow-md">
+      <div
+        key={"post-about-" + String(index)}
+        className="flex mb-8 p-4 bg-indigo-50 shadow-md hover:shadow-xl duration-200"
+      >
         <span className="flex-none bg-gray-300 mr-4 my-auto h-40 w-40">
           {props.thumbnail ? (
             <img
