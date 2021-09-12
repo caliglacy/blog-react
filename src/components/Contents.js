@@ -10,8 +10,8 @@ import { About } from "../pages/About";
 
 const Contents = () => {
   return (
-    <div className="max-w-screen-xl mx-auto lg:flex justify-center">
-      <div className="w-2/3 flex-grow">
+    <div className="max-w-screen-xl mx-auto my-8 px-8 max-w-screen-xl lg:flex">
+      <div className="lg:w-3/4">
         <Switch>
           <Route exact path="/" component={TopPage} />
           <Route exact path="/post" component={PostSearch} />
@@ -22,7 +22,7 @@ const Contents = () => {
           <Route component={Page404} />
         </Switch>
       </div>
-      <div className="w-1/3 ml-4 flex-grow">
+      <div className="lg:w-1/4 ml-4">
         <SideBar />
       </div>
     </div>
