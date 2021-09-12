@@ -4,7 +4,7 @@ Develop an original blog implemented in create-app-react.
 
 # 公開バージョン
 
-v1.3
+v1.6
 
 # 説明
 
