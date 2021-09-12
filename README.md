@@ -39,8 +39,9 @@ v1.3
 
 # リリースノート
 
-v1.4 Tailwind CSS に JIT モードを設定(開発者用)
-v1.3 Tailwind CSS を CDN からビルドに変更
+v1.5 投稿一覧のテキストとサムネイルが重なっている問題を修正(#1)<br>
+v1.4 Tailwind CSS に JIT モードを設定(開発者用)<br>
+v1.3 Tailwind CSS を CDN からビルドに変更<br>
 v1.2 API キー用の環境変数名を修正<br>
 v1.1 API キーを環境変数から作成されるように修正([#4](https://github.com/caliglacy/blog-react/issues/4))<br>
 v1.0 初リリース
