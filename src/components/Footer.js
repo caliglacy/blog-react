@@ -1,7 +1,7 @@
 const Footer = () => {
   const Year = new Date().getFullYear(); // 表示時の西暦
   return (
-    <div className="mt-4 py-2 theme-color-heavy text-white text-sm">
+    <div className="py-2 theme-color-heavy text-white text-sm">
       <div className="max-w-content">
         <div className="flex justify-center space-x-8">
           <span>ホーム</span>

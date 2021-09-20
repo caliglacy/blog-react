@@ -4,7 +4,7 @@ import noImg from "../img/no-image.png";
 
 const ProfilePage = () => {
   return (
-    <div>
+    <div className="content-field">
       <div className="mb-16">
         <h2>プロフィール</h2>
         <div className="flex">

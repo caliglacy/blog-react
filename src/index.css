@@ -17,6 +17,7 @@
 }
 
 @layer utilities {
+  /* テーマカラー */
   .theme-color-week {
     @apply bg-indigo-50;
   }
@@ -37,8 +38,25 @@
     @apply bg-indigo-700;
   }
 
+  /* レスポンシブ */
   .max-w-content {
     @apply max-w-screen-lg;
     @apply mx-auto;
+  }
+
+  /* ユーティリティ */
+  .drop-shadow-basic {
+    filter: drop-shadow(2px 2px 3px rgba(100, 100, 100, 0.3));
+  }
+
+  .drop-shadow-strong {
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.4));
+  }
+
+  /* セット */
+  .content-field {
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    @apply bg-white;
+    @apply p-8;
   }
 }

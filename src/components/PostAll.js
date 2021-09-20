@@ -4,7 +4,7 @@ import { PostNotFound } from "./PostNotFound";
 const PostAll = ({ props }) => {
   // 記事の読み込みが完了していない場合のブロック処理を上流で行うこと
   return (
-    <div>
+    <div className="content-field">
       {props.id ? (
         // 記事が見つかった場合
         <div>

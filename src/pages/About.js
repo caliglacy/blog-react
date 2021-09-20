@@ -2,7 +2,7 @@ import info from "../data/about.json";
 
 const About = () => {
   return (
-    <div>
+    <div className="content-field">
       <div className="mb-16">
         <h2>{info.what.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: info.what.body }} />
