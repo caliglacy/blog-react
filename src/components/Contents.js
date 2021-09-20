@@ -10,7 +10,7 @@ import { About } from "../pages/About";
 
 const Contents = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-8 px-8 max-w-screen-xl lg:flex">
+    <div className="max-w-content my-8 px-8 lg:flex">
       <div className="lg:w-3/4">
         <Switch>
           <Route exact path="/" component={TopPage} />
