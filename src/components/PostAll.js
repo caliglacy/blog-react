@@ -8,7 +8,7 @@ const PostAll = ({ props }) => {
       {props.id ? (
         // 記事が見つかった場合
         <div>
-          <h3>{props.title}</h3>
+          <h1>{props.title}</h1>
           <div>
             <span>{props.publishedAt.slice(0, 10)}</span>
             <span>{props.category.category}</span>
