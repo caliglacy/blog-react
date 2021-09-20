@@ -17,6 +17,26 @@
 }
 
 @layer utilities {
+  .theme-color-week {
+    @apply bg-indigo-50;
+  }
+
+  .theme-color-light {
+    @apply bg-indigo-100;
+  }
+
+  .theme-color-regular {
+    @apply bg-indigo-300;
+  }
+
+  .theme-color-heavy {
+    @apply bg-indigo-500;
+  }
+
+  .theme-color-strong {
+    @apply bg-indigo-700;
+  }
+
   .max-w-content {
     @apply max-w-screen-lg;
     @apply mx-auto;
