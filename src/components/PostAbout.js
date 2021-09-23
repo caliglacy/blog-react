@@ -20,12 +20,12 @@ const PostAbout = ({ props }, index) => {
           )}
         </span>
         <div>
-          <h3>{props.title}</h3>
-          <div className="mb-2">
+          <h3 className="my-1">{props.title}</h3>
+          <div className="mb-1">
             <span className="mr-4">{props.publishedAt.slice(0, 10)}</span>
             <span>{props.category.category}</span>
           </div>
-          <div className="mb-2">{props.description}</div>
+          <div className="mb-1">{props.description}</div>
         </div>
       </div>
     </Link>
