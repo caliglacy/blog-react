@@ -22,7 +22,7 @@ const Contents = () => {
           <Route component={Page404} />
         </Switch>
       </div>
-      <div className="lg:w-1/4 ml-4">
+      <div className="lg:w-1/4 px-4 mt-6 lg:mt-0">
         <SideBar />
       </div>
     </div>
